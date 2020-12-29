@@ -21,6 +21,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 1vw;
     cursor: default;
+    position: fixed;
 }
 .border{
     background-color: rgb(177, 177, 177);
@@ -90,6 +91,7 @@
     transform: translateY(71vh);
     outline: none;
     cursor: pointer;
+    position: fixed;
 }
 .aanmelden_button:hover{
     font-size: 3.1vh;

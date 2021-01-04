@@ -1,4 +1,8 @@
 .homework{
     background-color: rgba(0, 0, 0, 0.25);
+}
+.homework:hover{
     cursor: default;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.7);
 }

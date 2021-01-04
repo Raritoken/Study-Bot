@@ -85,7 +85,7 @@
 }
 .homework, .progress, .settings{
     margin-top: 37vh;
-    margin-left: -56.95vw;
+    margin-left: -56.99vw;
     width: 13.95vw;
     padding: 3vh 0vw;
     transform: translateX(71vw);
@@ -93,7 +93,7 @@
     color: rgba(0, 0, 0, 0.7);
 }
 .progress, .settings{
-    margin: -2.5vh 0vh 0vw -56.95vw;
+    margin: -2.5vh 0vh 0vw -56.99vw;
     background-color: rgb(200, 200, 200);
 }
 .settings{

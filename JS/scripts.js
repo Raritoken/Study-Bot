@@ -46,12 +46,10 @@ function IntroSwitch(){
     var txt = "";
     if (count == 0) {
         txt = "<br>Klik op \"begrepen\" om verder te gaan.";
-        count++;
-    }
+        count++; }
     else {
         txt = "Even voorstellen, ik ben Studybod en ik ben je hulp<br><br>en toeverlaat bij het maken van je huiswerk.";
-        count--;
-    }
+        count--; }
     document.getElementById("intro").innerHTML = txt;
     Timer(IntroSwitch, 5000);
 };
@@ -59,7 +57,7 @@ function IntroSwitch(){
 function Help(){
     var txt;
     if (confirm("Het lijkt erop dat je er niet uit kunt komen, klik op OK voor assistentie.")){
-        txt = "Op dit moment is Study-Bot erg druk bezig, probeer het later opnieuw."; }
-    else{ txt = "Veel succes!"; }
+        txt = "Op dit moment is Studybod erg druk bezig, probeer het later opnieuw."; }
+    else { txt = "Veel succes!"; }
     window.alert(txt);
 }

@@ -23,6 +23,11 @@
     cursor: pointer;
     position: fixed;
 }
+.header:hover{
+    font-size: 210%;
+    transform: translateY(-0.1vh);
+    transform: translateX(-0.1vw);
+}
 .border{
     background-color: rgb(177, 177, 177);
     margin-top: 5vh;

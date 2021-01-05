@@ -75,7 +75,8 @@
     cursor: default;
 }
 .placeholderImg{
-    transform: translateY(17vh);
+    transform: translateY(5vh);
+    z-index: 0;
 }
 .profile{
     margin-top: 17vh;
@@ -170,6 +171,7 @@
     outline: none;
     cursor: pointer;
     position: fixed;
+    z-index: 1;
 }
 .aanmelden_button:hover, .begrepen_button:hover{
     font-size: 3.1vh;

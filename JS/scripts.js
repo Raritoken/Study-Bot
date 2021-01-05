@@ -1,4 +1,4 @@
-Timer(Help, 20000);
+Timer(Help, 50000);
 Timer(IntroSwitch, 5000);
 
 function Timer(f, t){

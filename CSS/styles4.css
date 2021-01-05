@@ -7,3 +7,8 @@
     background-color: rgba(0, 0, 0, 0.25);
     color: rgba(0, 0, 0, 0.7);
 }
+.images{
+    margin-left: 30vw;
+    position: fixed;
+    z-index: 1;
+}

@@ -7,12 +7,12 @@ function Timer(f, t){
 
 var count = 0;
 $(function buttonclick() {
-    $(".aanmelden_button").click(function() {
+    $(".aanmelden_button").click(function(){
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
-        if (username == "test" && password == "1234"){
-        window.open("aanmelden.html", "_self");}
-        else{
+        if (username.toUpperCase() == "TEST" && password == "1234"){
+            window.open("aanmelden.html", "_self");}
+        else {
             window.alert("username and/or password not correct!");
         }
     });

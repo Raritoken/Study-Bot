@@ -31,14 +31,21 @@
 .b1:hover, .b2:hover{
     background-color: rgb(0, 200, 95);
     cursor: pointer;
-    font-size: 2.05vh;
+    font-size: 2.025vh;
 }
 .b1{
     margin-left: 0vw;
+    transform: translateX(4.5vw);
     position: fixed;
 }
 .b2{
     margin-top: 2vh;
-    transform: translateX(26.5vw);
+    transform: translateX(28.5vw);
     position: fixed;
+}
+.b1:hover{
+    transform: translateX(4.4vw);
+}
+.b2:hover{
+    transform: translateX(28.4vw);
 }

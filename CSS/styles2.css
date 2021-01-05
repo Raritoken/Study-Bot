@@ -20,6 +20,9 @@
 #img1, #img2{
     border-radius: 20px;
 }
+#img2{
+    transform: translateX(0.5vw);
+}
 .b1, .b2{
     margin-right: 26vw;
     font-size: 2vh;
@@ -39,5 +42,5 @@
 }
 .b2{
     margin-top: -8.75vh;
-    transform: translateX(26vw);
+    transform: translateX(26.5vw);
 }

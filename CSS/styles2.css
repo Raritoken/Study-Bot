@@ -35,17 +35,17 @@
 }
 .b1{
     margin-left: 0vw;
-    transform: translateX(4.5vw);
+    transform: translateX(4vw);
     position: fixed;
 }
 .b2{
     margin-top: 2vh;
-    transform: translateX(23.5vw);
+    transform: translateX(25vw);
     position: fixed;
 }
 .b1:hover{
-    transform: translateX(4.4vw);
+    transform: translateX(3.9vw);
 }
 .b2:hover{
-    transform: translateX(23.4vw);
+    transform: translateX(24.9vw);
 }

@@ -25,6 +25,7 @@
 }
 .header:hover{
     font-size: 210%;
+    margin-top: 2.25vh;
     transform: translateY(-0.1vh);
     transform: translateX(-0.1vw);
     position: fixed;
@@ -75,7 +76,7 @@
     cursor: default;
 }
 .placeholderImg{
-    transform: translateY(5vh);
+    transform: translateY(8vh);
     z-index: 0;
 }
 .profile{

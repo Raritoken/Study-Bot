@@ -1,0 +1,27 @@
+.askHelp, .giveHelp{
+    width: 15vw;
+    height: 6vh;
+    background-color: rgb(0, 150, 90);
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 4vh;
+}
+.askHelp:hover, .giveHelp:hover{
+    background-color: rgb(0, 200, 95);
+    border: none;
+    cursor: pointer;
+    width: 15.1vw;
+    height: 6.1vh;
+    font-size: 4.1vh;
+}
+.askHelp{
+    transform: translateX(37vw);
+    position: fixed;
+    z-index: 2;
+}
+.giveHelp{
+    transform: translateX(60vw);
+    position: fixed;
+    z-index: 2;
+}

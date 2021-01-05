@@ -2,11 +2,6 @@
     background-color: rgba(0, 0, 0, 0.25);
     cursor: default;
 }
-.settings:hover{
-    cursor: default;
-    background-color: rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.7);
-}
 .profileImg{
     margin-top: 17.25vh;
     transform: translateX(16.75vw);

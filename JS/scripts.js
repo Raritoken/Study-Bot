@@ -73,3 +73,9 @@ function Help(){
     else { txt = "Veel succes!"; }
     window.alert(txt);
 }
+
+$(function buttonclick() {
+    ($(".askHelp").add($(".giveHelp"))).click(function() {
+        window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
+    });
+});

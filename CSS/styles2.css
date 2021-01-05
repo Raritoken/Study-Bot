@@ -1,11 +1,6 @@
 .homework{
     background-color: rgba(0, 0, 0, 0.25);
 }
-.homework:hover{
-    cursor: default;
-    background-color: rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.7);
-}
 .profileImg{
     margin-top: 17.25vh;
     transform: translateX(16.75vw);
@@ -29,18 +24,21 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     padding: 2vh 1vw;
-    background-color: grey;
+    background-color: rgb(0, 150, 90);
+    color: white;
     border-radius: 20px;
 }
 .b1:hover, .b2:hover{
-    color: white;
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(0, 200, 95);
     cursor: pointer;
+    font-size: 2.05vh;
 }
 .b1{
     margin-left: 0vw;
+    position: fixed;
 }
 .b2{
-    margin-top: -8.75vh;
+    margin-top: 2vh;
     transform: translateX(26.5vw);
+    position: fixed;
 }

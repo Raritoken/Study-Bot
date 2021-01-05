@@ -180,7 +180,20 @@
     background-color: rgb(0, 200, 95);
     transform: translateY(70.9vh) translateX(-0.1vw);
 }
-
+.loginName, .loginPassword{
+    font-size: 3vh;
+    position: fixed;
+    z-index: 3;
+}
+.loginName, .loginPassword{
+    margin-top: 50vh;
+}
+.loginName{
+    transform: translateX(-6.5vw);
+}
+.loginPassword{
+    transform: translateX(22vw);
+}
 @media only screen and (max-width: 1440px), (max-height: 800px){
     .bg2{
         margin-left: -3vw;  

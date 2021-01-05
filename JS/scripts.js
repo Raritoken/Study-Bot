@@ -6,7 +6,7 @@ function Timer(f, t){
 };
 
 var count = 0;
-$(function buttonclick() {
+$(function buttonclick(form) {
     $(".aanmelden_button").click(function() {
         window.open("aanmelden.html", "_self");
     });

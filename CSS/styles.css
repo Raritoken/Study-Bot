@@ -189,10 +189,10 @@
     margin-top: 50vh;
 }
 .loginName{
-    transform: translateX(-6.5vw);
+    transform: translateX(-23vw);
 }
 .loginPassword{
-    transform: translateX(22vw);
+    transform: translateX(5vw);
 }
 @media only screen and (max-width: 1440px), (max-height: 800px){
     .bg2{

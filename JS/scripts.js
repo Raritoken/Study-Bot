@@ -6,9 +6,12 @@ function Timer(f, t){
 };
 
 var count = 0;
-$(function buttonclick(form) {
+$(function buttonclick() {
     $(".aanmelden_button").click(function() {
-        window.open("aanmelden.html", "_self");
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "test" && password == "1234"){
+        window.open("aanmelden.html", "_self");}
     });
 });
 

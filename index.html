@@ -6,7 +6,7 @@
     <title>Study-bot</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
+<body oncontextmenu="return false">
     <div class = "bg1"></div>
     <div class = "bg2"></div>
     <div class = "border"> </div>
@@ -20,8 +20,12 @@
         <button class = "aanmelden_button">Aanmelden</button>
     </div>
     <div class = "placeholderImg">
-        <input class = "loginName" id = "username" type="text" placeholder="username" name = "uname">
-        <input class = "loginPassword" id = "password" type="password" placeholder="password" name = "pass">
+        <form name="login">
+            <div class = "login">
+            <input class = "loginName" id = "username" type="text" placeholder="Gebruikersnaam" name = "uname">
+            <input class = "loginPassword" id = "password" type="password" placeholder="Wachtwoord" name = "pass">
+            </div>
+        </form>
         <img src = "Resources/50-50 logo.png" width = "650px">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -17,6 +17,9 @@
     position: fixed;
     z-index: 1;
 }
+#img1, #img2{
+    border-radius: 20px;
+}
 .b1, .b2{
     margin-right: 26vw;
     font-size: 2vh;

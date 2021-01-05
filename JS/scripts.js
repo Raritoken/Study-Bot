@@ -1,5 +1,5 @@
-Timer(Help, 50000);
-Timer(IntroSwitch, 5000);
+Timer(Help, 60000);
+Timer(IntroSwitch, 7500);
 
 function Timer(f, t){
     setTimeout(f, t);
@@ -21,6 +21,18 @@ $(function buttonclick() {
 $(function buttonclick() {
     $(".homework").click(function() {
         window.open("home.html", "_self");
+    });
+});
+
+$(function buttonclick() {
+    $(".b1").click(function() {
+        window.open("aardrijkskunde.html", "_self");
+    });
+});
+
+$(function buttonclick() {
+    $(".b2").click(function() {
+        window.open("geschiedenis.html", "_self");
     });
 });
 

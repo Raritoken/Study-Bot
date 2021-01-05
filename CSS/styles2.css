@@ -6,8 +6,35 @@
     background-color: rgba(0, 0, 0, 0.25);
     color: rgba(0, 0, 0, 0.7);
 }
+.profileImg{
+    margin-top: 17.25vh;
+    transform: translateX(16.75vw);
+    position: fixed;
+    z-index: 1;
+}
 .images{
     margin-left: 30vw;
     position: fixed;
     z-index: 1;
+}
+.b1, .b2{
+    margin-right: 26vw;
+    font-size: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 2vh 1vw;
+    background-color: grey;
+    border-radius: 20px;
+}
+.b1:hover, .b2:hover{
+    color: white;
+    background-color: rgb(165, 165, 165);
+    cursor: pointer;
+}
+.b1{
+    margin-left: 0vw;
+}
+.b2{
+    margin-top: -8.75vh;
+    transform: translateX(26vw);
 }

@@ -45,6 +45,7 @@
     padding: 5vh 36vw;
     border-radius: 5vh 5vh 0vw 0vw;
     position: fixed;
+    z-index: 1;
 }
 .borderBox{
     background-color: rgb(230, 230, 230);
@@ -74,7 +75,7 @@
     cursor: default;
 }
 .placeholderImg{
-    transform: translateY(23.5vh);
+    transform: translateY(17vh);
 }
 .profile{
     margin-top: 17vh;
@@ -87,7 +88,8 @@
     font-size: 2.5vh;
     text-align: center;
     margin-left: -57vw;
-    transform: translateY(35vh);
+    transform: translateY(36vh);
+    font-weight: bold;
 }
 .homework, .progress, .settings{
     margin-top: 6vh;
@@ -97,6 +99,7 @@
     transform: translateX(71vw);
     background-color: rgb(200, 200, 200);
     color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
 }
 .progress, .settings{
     margin: -2.5vh 0vh 0vw -56.99vw;
@@ -140,6 +143,7 @@
     transform: translateY(9vh);
     position: fixed;
     cursor: default;
+    z-index: 2;
 }
 .logo{
     color: gray;
@@ -150,6 +154,7 @@
     transform: translateY(9vh);
     position: fixed;
     cursor: default;
+    z-index: 2;
 }
 .aanmelden_button, .begrepen_button{
     color: white;

@@ -21,7 +21,7 @@ $(function Click() {
             window.open("aanmelden.html", "_self");
         }
         // Easter Egg
-        else if (username.toUpperCase() == "RONDE TAFEL" && password == "2020"){
+        else if (username.toUpperCase() == "RONDE TAFEL" && password == "2019"){
             window.alert("BOIIS, WE AT IT AGAIN!");
             window.open("aanmelden.html", "_self");
         }

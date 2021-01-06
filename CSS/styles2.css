@@ -40,12 +40,12 @@
 }
 .b2{
     margin-top: 2vh;
-    transform: translateX(25vw);
+    transform: translateX(28vw);
     position: fixed;
 }
 .b1:hover{
     transform: translateX(3.9vw);
 }
 .b2:hover{
-    transform: translateX(24.9vw);
+    transform: translateX(27.9vw);
 }

@@ -1,75 +1,8 @@
 Timer(Help, 60000);
-Timer(IntroSwitch, 7500);
+Timer(IntroSwitch, 0);
 
 function Timer(f, t){
     setTimeout(f, t);
-};
-
-var count = 0;
-$(function buttonclick() {
-    $(".aanmelden_button").click(function(){
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        if (username.toUpperCase() == "TEST" && password == "1234"){
-            window.open("aanmelden.html", "_self");}
-        else {
-            window.alert("username and/or password not correct!");
-        }
-    });
-});
-
-$(function buttonclick() {
-    $(".begrepen_button").click(function() {
-        window.open("home.html", "_self");
-    });
-});
-
-$(function buttonclick() {
-    $(".homework").click(function() {
-        window.open("home.html", "_self");
-    });
-});
-
-$(function buttonclick() {
-    $(".b1").click(function() {
-        window.open("aardrijkskunde.html", "_self");
-    });
-});
-
-$(function buttonclick() {
-    $(".b2").click(function() {
-        window.open("geschiedenis.html", "_self");
-    });
-});
-
-$(function buttonclick() {
-    $(".progress").click(function() {
-        window.open("progressie.html", "_self");
-    });
-});
-
-$(function buttonclick() {
-    $(".settings").click(function() {
-        window.open("instellingen.html", "_self");
-    });
-});
-
-$(function buttonclick() {
-    $(".header").click(function() {
-        window.open("index.html", "_self");
-    });
-});
-
-function IntroSwitch(){
-    var txt = "";
-    if (count == 0) {
-        txt = "<br>Klik op \"begrepen\" om verder te gaan.";
-        count++; }
-    else {
-        txt = "Even voorstellen, ik ben Studybod en ik ben je hulp<br><br>en toeverlaat bij het maken van je huiswerk.";
-        count--; }
-    document.getElementById("intro").innerHTML = txt;
-    Timer(IntroSwitch, 5000);
 };
 
 function Help(){
@@ -78,10 +11,75 @@ function Help(){
         txt = "Op dit moment is Studybod erg druk bezig, probeer het later opnieuw."; }
     else { txt = "Veel succes!"; }
     window.alert(txt);
-}
+};
 
-$(function buttonclick() {
-    ($(".askHelp").add($(".giveHelp"))).click(function() {
-        window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
+$(function Click() {
+    $(".aanmelden_button").click(function(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username.toUpperCase() == "TEST" && password == "1234" || username == "" && password == ""){
+            window.open("aanmelden.html", "_self");
+        }
+        // Easter Egg
+        else if (username.toUpperCase() == "RONDE TAFEL" && password == "2020"){
+            window.alert("BOIIS, WE AT IT AGAIN!");
+            window.open("aanmelden.html", "_self");
+        }
+        else {
+            window.alert("username and/or password not correct!");
+        }
+        });
+        $(".begrepen_button").click(function(){
+            window.open("home.html", "_self");
+        });
+        $(".homework").click(function(){
+            window.open("home.html", "_self");
+        });
+        $(".b1").click(function(){
+            window.open("aardrijkskunde.html", "_self");
+        });
+        $(".b2").click(function(){
+            window.open("geschiedenis.html", "_self");
+        });
+        $(".progress").click(function(){
+            window.open("progressie.html", "_self");
+        });
+        $(".settings").click(function(){
+            window.open("instellingen.html", "_self");
+        });
+        $(".header").click(function(){
+            window.open("index.html", "_self");
+        });
+        ($(".askHelp").add($(".giveHelp"))).click(function(){
+            window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
+        });
     });
-});
+    
+var count = 0;
+function IntroSwitch(){
+    switch(count)
+    {
+        case (0):
+            var txt = "<br>Even voorstellen, ik ben Studybod en ik ben je hulp<br><br>en toeverlaat bij het maken van je huiswerk.";
+            count++;
+            break;
+        case (1):
+            txt = "Wist je dat wanneer je moeite hebt met een vak er<br><br>altijd andere leerlingen voor je klaarstaan om je<br><br>te helpen?";
+            count++;
+            break;
+        case (2):
+            txt = "Binnen Studybod worden jij en je jaargenoten aan<br><br>elkaar gekoppeld om elkaar verder op weg te<br><br>helpen met het maken van huiswerk.";
+            count++;
+            break;
+        case (3):
+            txt = "Kom je er even niet uit?<br><br>Of heb je tijd over om een ander te helpen?<br><br>Schakel Studybod in!";
+            count++;
+            break;
+        default:
+            txt = "<br><br>Klik op \"begrepen\" om verder te gaan.";
+            count = 1;
+            break;
+    }
+    document.getElementById("intro").innerHTML = txt;
+    Timer(IntroSwitch, 5000);
+};

@@ -75,6 +75,9 @@
     text-align: center;
     cursor: default;
 }
+.intro_tekst{
+    transform: translateY(32vh);
+}
 .placeholderImg{
     transform: translateY(8vh);
     z-index: 0;

@@ -3,8 +3,8 @@
     cursor: default;
 }
 .profileImg{
-    margin-top: 17.25vh;
-    transform: translateX(16.75vw);
+    margin-top: 18.5vh;
+    transform: translateX(17vw);
     position: fixed;
     z-index: 1;
 }

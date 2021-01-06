@@ -11,7 +11,7 @@ function Help(){
         txt = "Op dit moment is Studybod erg druk bezig, probeer het later opnieuw."; }
     else { txt = "Veel succes!"; }
     window.alert(txt);
-    Timer(Help, 30000);
+    Timer(Help, 300000);
 };
 
 $(function Click() {

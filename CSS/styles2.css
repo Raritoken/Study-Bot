@@ -2,8 +2,8 @@
     background-color: rgba(0, 0, 0, 0.25);
 }
 .profileImg{
-    margin-top: 18.5vh;
-    transform: translateX(17vw);
+    margin-top: 18.75vh;
+    transform: translateX(17.25vw);
     position: fixed;
     z-index: 1;
 }

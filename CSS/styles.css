@@ -155,8 +155,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2vh;
     border-radius: 5px;
-    margin-left: 81vw;
-    transform: translateY(9vh);
+    margin-left: 80vw;
+    transform: translateY(4.75vh);
     position: fixed;
     cursor: default;
     z-index: 2;

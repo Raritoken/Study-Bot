@@ -84,3 +84,13 @@ function IntroSwitch(){
     document.getElementById("intro").innerHTML = txt;
     Timer(IntroSwitch, 5000);
 };
+
+$(function Disabled(){
+    $(document).on('keydown',function(event)
+    {
+    if (event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73))
+    {
+        return false;
+    }   
+    });
+});

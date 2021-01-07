@@ -11,18 +11,8 @@ function Help(){
         txt = "Op dit moment is Studybod erg druk bezig, probeer het later opnieuw."; }
     else { txt = "Veel succes!"; }
     window.alert(txt);
+    Timer(Help, 60000);
 };
-
-function SetTimer(){
-    
-    var t = document.getElementById("time_AI").value;
-    if (t <= 0) { 
-        Timer(Help, 15000);
-    }
-    else {
-        Timer(Help, t * 60000);
-    }
-}
 
 var count = 0;
 function IntroSwitch(){

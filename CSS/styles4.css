@@ -13,19 +13,3 @@
     position: fixed;
     z-index: 1;
 }
-.tA{
-    font-size: 2vh;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    transform: translateX(30vw);
-    margin-top: 8vh;
-    position: fixed;
-    z-index: 2;
-}
-.time_AI{
-    width: 2vw;
-    font-size: 2vh;
-    transform: translateX(0.75vw);
-    position: fixed;
-    z-index: 3;
-}

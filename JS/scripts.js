@@ -20,48 +20,6 @@ function Help(){
     window.alert(txt);
 };
 
-$(function Click() {
-    $(".aanmelden_button").click(function(){
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        if (username.toUpperCase() == "TEST" && password == "1234" || username == "" && password == ""){
-            window.open("aanmelden.html", "_self");
-        }
-        // Easter Egg
-        else if (username.toUpperCase() == "RONDE TAFEL" && password == "2019"){
-            window.alert("BOIIS, WE AT IT AGAIN!");
-            window.open("aanmelden.html", "_self");
-        }
-        else {
-            window.alert("username and/or password not correct!");
-        }
-        });
-        $(".begrepen_button").click(function(){
-            window.open("home.html", "_self");
-        });
-        $(".homework").click(function(){
-            window.open("home.html", "_self");
-        });
-        $(".b1").click(function(){
-            window.open("aardrijkskunde.html", "_self");
-        });
-        $(".b2").click(function(){
-            window.open("geschiedenis.html", "_self");
-        });
-        $(".progress").click(function(){
-            window.open("progressie.html", "_self");
-        });
-        $(".settings").click(function(){
-            window.open("instellingen.html", "_self");
-        });
-        $(".header").click(function(){
-            window.open("index.html", "_self");
-        });
-        ($(".askHelp").add($(".giveHelp"))).click(function(){
-            window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
-        });
-    });
-    
 var count = 0;
 function IntroSwitch(){
     switch(count)
@@ -91,6 +49,49 @@ function IntroSwitch(){
     Timer(IntroSwitch, 5000);
 };
 
+//JQuery
+$(function Click(){
+    $(".aanmelden_button").click(function(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username.toUpperCase() == "TEST" && password == "1234" || username == "" && password == ""){
+            window.open("aanmelden.html", "_self");
+        }
+        // Easter Egg
+        else if (username.toUpperCase() == "RONDE TAFEL" && password == "2019"){
+            window.alert("BOIIS, WE AT IT AGAIN!");
+            window.open("aanmelden.html", "_self");
+        }
+        else {
+            window.alert("username and/or password not correct!");
+        }
+    });
+    $(".begrepen_button").click(function(){
+        window.open("home.html", "_self");
+    });
+    $(".homework").click(function(){
+        window.open("home.html", "_self");
+    });
+    $(".b1").click(function(){
+        window.open("aardrijkskunde.html", "_self");
+    });
+    $(".b2").click(function(){
+        window.open("geschiedenis.html", "_self");
+    });
+    $(".progress").click(function(){
+        window.open("progressie.html", "_self");
+    });
+    $(".settings").click(function(){
+        window.open("instellingen.html", "_self");
+    });
+    $(".header").click(function(){
+        window.open("index.html", "_self");
+    });
+    ($(".askHelp").add($(".giveHelp"))).click(function(){
+        window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
+    });
+});
+    
 $(function Disabled(){
     $(document).on('keydown',function(event)
     {

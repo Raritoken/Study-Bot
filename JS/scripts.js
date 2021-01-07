@@ -1,4 +1,4 @@
-Timer(Help, 60000);
+Timer(Help, 15000);
 Timer(IntroSwitch, 0);
 
 function Timer(f, t){
@@ -7,11 +7,17 @@ function Timer(f, t){
 
 function Help(){
     var txt;
+    var t = document.getElementById("time_AI").value;
+    if (t <= 0) { 
+        Timer(Help, 15000);
+    }
+    else {
+        Timer(Help, t * 60000);
+    }
     if (confirm("Het lijkt erop dat je er niet uit kunt komen, klik op OK voor assistentie.")){
         txt = "Op dit moment is Studybod erg druk bezig, probeer het later opnieuw."; }
     else { txt = "Veel succes!"; }
     window.alert(txt);
-    Timer(Help, 300000);
 };
 
 $(function Click() {

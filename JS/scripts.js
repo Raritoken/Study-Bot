@@ -7,6 +7,14 @@ function Timer(f, t){
 
 function Help(){
     var txt;
+    if (confirm("Het lijkt erop dat je er niet uit kunt komen, klik op OK voor assistentie.")){
+        txt = "Op dit moment is Studybod erg druk bezig, probeer het later opnieuw."; }
+    else { txt = "Veel succes!"; }
+    window.alert(txt);
+};
+
+function SetTimer(){
+    
     var t = document.getElementById("time_AI").value;
     if (t <= 0) { 
         Timer(Help, 15000);
@@ -14,11 +22,7 @@ function Help(){
     else {
         Timer(Help, t * 60000);
     }
-    if (confirm("Het lijkt erop dat je er niet uit kunt komen, klik op OK voor assistentie.")){
-        txt = "Op dit moment is Studybod erg druk bezig, probeer het later opnieuw."; }
-    else { txt = "Veel succes!"; }
-    window.alert(txt);
-};
+}
 
 var count = 0;
 function IntroSwitch(){

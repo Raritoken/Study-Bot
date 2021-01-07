@@ -82,7 +82,20 @@ $(function Click(){
         window.open("index.html", "_self");
     });
     ($(".askHelp").add($(".giveHelp"))).click(function(){
+        var x = document.getElementById("reply");
+        var u = document.getElementById("userMatch");
         window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
+        x.style.display = "block";
+        u.style.display = "block";
+
+        var data = [
+            "Naam:\tFleur Tomsen<br>Goed in:\tAardrijkskunde, geschiedenis & wiskunde A<br>Zoekt hulp voor:\tBiologie & scheikunde",
+            "Naam:\tRanicha Khoenkhoen<br>Goed in:\tGeschiedenis & aardrijkskunde<br>Zoekt hulp voor:\tNatuurkunde & wiskunde B",
+            "Naam:\tNhorvin Bentulan<br>Goed in:\tWiskunde B, aardrijkskunde & geschiedenis<br>Zoekt hulp voor:\tNatuurkunde & Nederlands"
+        ];
+        var num = Math.floor(Math.random() * data.length); 
+
+        u.innerHTML = "<span style = \"color:green\">Match gevonden!</span><br><br>" + data[num];
     });
 });
     

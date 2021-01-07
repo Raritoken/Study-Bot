@@ -31,3 +31,26 @@
 .giveHelp:hover{
     transform: translateX(59.9vw);
 }
+.response{
+    width: 40vw;
+    height: 25vh;
+    transform: translateX(36vw);
+    margin-top: -21.5vh;
+    background-color: rgba(128, 128, 128, 0.35);
+    box-shadow: rgb(20, 20, 20) 0vh 0vw 1vw 0vh;
+    border-radius: 20px;
+    border-style: outset;
+    display: none;
+    position: fixed;
+    z-index: 3;
+}
+.match{
+    margin-top: -20.5vh;
+    margin-left: 37vw;
+    font-size: 3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    display: none;
+    position: fixed;
+    z-index: 4;
+}

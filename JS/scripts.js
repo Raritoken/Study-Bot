@@ -81,7 +81,7 @@ $(function Click(){
     $(".header").click(function(){
         window.open("index.html", "_self");
     });
-    ($(".askHelp").add($(".giveHelp"))).click(function(){
+    ($(".askHelp").click(function(){
         var x = document.getElementById("reply");
         var u = document.getElementById("userMatch");
         window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
@@ -94,9 +94,22 @@ $(function Click(){
             "Naam:\tNhorvin Bentulan<br>Goed in:\tWiskunde B, aardrijkskunde & geschiedenis<br>Zoekt hulp voor:\tNatuurkunde & Nederlands"
         ];
         var num = Math.floor(Math.random() * data.length); 
-
         u.innerHTML = "<span style = \"color:green\">Match gevonden!</span><br><br>" + data[num];
-    });
+    }));
+    ($(".giveHelp").click(function(){
+        var x = document.getElementById("reply");
+        var u = document.getElementById("userMatch");
+        window.alert("Studybod is momenteel opzoek naar een match, een ogenblik geduld alstublieft.");
+        x.style.display = "block";
+        u.style.display = "block";
+
+        var data = [
+            "Naam:\tArtiga Kanthansamy<br>Goed in:\tBiologie & scheikunde<br>Zoekt hulp voor:\tAardrijkskunde & geschiedenis",
+            "Naam:\tIsha Moharir<br>Goed in:\tEngels, natuurkunde & biologie<br>Zoekt hulp voor:\tAardrijkskunde & geschiedenis",
+        ];
+        var num = Math.floor(Math.random() * data.length); 
+        u.innerHTML = "<span style = \"color:green\">Match gevonden!</span><br><br>" + data[num];
+    }));
 });
     
 $(function Disabled(){
